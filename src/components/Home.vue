@@ -34,7 +34,7 @@
     <v-row>
       <v-col md="4">
         <v-card>
-          <v-img src="/image/taylor-kiser-2.jpg" 
+          <v-img src="/image/Butter-chicken.jpg" 
           class="align-end text white"
           height="200px"
           cover></v-img>
@@ -49,13 +49,11 @@
       </v-col>
       <v-col md="4">
                 <v-card>
-                    <v-img 
-                    src="/images/Red-Velvet-stopper.jpg" 
+                    <v-img src="/images/Jacob-thomas.jpg" 
                     class="align-end text-white" 
-                    height="200" 
-                    cover>
+                    height="200px" 
+                    cover></v-img>
                     <v-card-title>A new heart stopping dessert</v-card-title>
-                </v-img>
                 <v-card-subtitle>A red velvet chocolate cake with chery jam in the middle covered with milk chocolate</v-card-subtitle>
                 <v-card-actions>
                     <v-btn> Read More</v-btn>
@@ -86,13 +84,13 @@
     <v-container class="text-center">
     <v-row>
       <v-col>
-      <v-card color="deep-purple-darken-4" dark>
+      <v-card color="purple-darken-3" dark>
         <v-footer class="text-center d-flex flex-column ga-2 py-4" color="deep-purple-lighten-1">
                 <div class="d-flex ga-3">
-                <v-btn icon="'mdi-facebook'" density="comfortable" variant="text" ></v-btn>
-                <v-btn icon="'mdi-twitter'" density="comfortable" variant="text" ></v-btn>
-                <v-btn icon="'mdi-linkedin'" density="comfortable" variant="text" ></v-btn>
-                <v-btn icon="'mdi-instagram'" density="comfortable" variant="text" ></v-btn>
+                <v-btn icon="mdi-facebook" density="comfortable" variant="text" ></v-btn>
+                <v-btn icon="mdi-twitter" density="comfortable" variant="text" ></v-btn>
+                <v-btn icon="mdi-linkedin" density="comfortable" variant="text" ></v-btn>
+                <v-btn icon="mdi-instagram" density="comfortable" variant="text" ></v-btn>
                 </div>
 
                 <v-divider class="my-2" thickness="2" width="50"></v-divider>
@@ -104,7 +102,7 @@
                 <v-divider></v-divider>
 
                 <div>
-                {{ new Date().getFullYear() }} — <strong>Vuetify</strong>
+                {{ new Date().getFullYear() }} — <strong>Cosmic Kitchen</strong>
                 </div>
             </v-footer>
             </v-card>
