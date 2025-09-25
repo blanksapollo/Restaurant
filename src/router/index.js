@@ -31,12 +31,12 @@ const router = createRouter({
     },
     {
       name: 'menuitem',
-      path: '/menuitem/:id',
+      path: '/menuitem',
       component: Menuitem,
     },
     {
-      name: 'reservations', 
-      path: '/reservations',
+      name: 'Reservations', 
+      path: '/Reservations',
       component: Reservations,
     },
     {

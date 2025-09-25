@@ -8,7 +8,7 @@ const isLoggedIn = true
       <v-app-bar-title>Cosmic Kitchen</v-app-bar-title>
       <v-btn to="/">Home</v-btn>
       <v-btn to ="/menu">Menu</v-btn>
-      <v-btn to ="/Reservation">Reservations</v-btn>
+      <v-btn to ="/Reservations">Reservations</v-btn>
        <v-btn to ="/ContactUs">Contact</v-btn>
       <v-btn to ='/order' v-if="isLoggedIn">My Orders</v-btn>
       <v-avatar to="/userprofile" v-if="isLoggedIn" class="ml-3">
