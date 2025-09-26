@@ -49,7 +49,7 @@
       </v-col>
       <v-col md="4">
                 <v-card>
-                    <v-img src="/images/Jacob-thomas.jpg" 
+                    <v-img src="/images/red-velvet.jpg" 
                     class="align-end text-white" 
                     height="200px" 
                     cover></v-img>

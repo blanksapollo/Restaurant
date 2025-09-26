@@ -1,17 +1,11 @@
 <script setup>
-const menuitem = {
-    name: 'Butter Chicken',
-    image: '/image/menu/Butter-chicken.jpg',
-    price: 600,
-    description: 'A creamy and flavorful chicken dish made with a rich tomato-based sauce, infused with butter and aromatic spices. Served with basmati rice or naan bread.',
-    category: 'Main Course'
-
-  
-}
+import{ useMenuStore} from '../stores/menu'
+const menuStore = useMenuStore()
+const menuitem = menuStore.selectedMenuItem
 </script>
 
 <template>
-    <v-container fluid class="d-flex fill-height" align="center">
+    <v-container fluid class="d-flex fill-height" >
       <v-row>
         <v-col md="6">
           <v-card class="pa-6 rounded-lg" justify="center">
@@ -23,11 +17,34 @@ const menuitem = {
             <v-card-title>{{ menuitem.name }}</v-card-title>
             <v-card-subtitle>{{ menuitem.price }}</v-card-subtitle>
             <v-card-text>{{ menuitem.description }}</v-card-text>
-            <v-card-text>Quantitiy<v-text-field></v-text-field></v-card-text>
+            <v-card-text>
+              <v-row>
+                <v-col md="2">Quantity</v-col>
+                  <v-col md ="4">
+                    <v-number-input
+                      control-variant="split"
+                      density="compact"
+                      :min="1"
+                      :max="10">
+                    </v-number-input>
+                  
+                </v-col>
+              </v-row>
+            </v-card-text>
             <v-card-actions>
-              <v-btn color="purple-darken-3">Order</v-btn>
+              <v-btn color="purple-darken-3" variant="elevated">Order</v-btn>
             </v-card-actions>
           </v-card>
+          <v-card class="pa-6 mt-3 rounded-lg">
+          <v-card-title>review</v-card-title>
+          <v-rating
+          hover
+          :length="5"
+          :size="32"
+          :model-value="3"
+          active-color="purple-darken-3"
+        /> </v-card>
+          
         </v-col>
       </v-row>
     </v-container>
