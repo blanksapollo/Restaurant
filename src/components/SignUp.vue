@@ -1,5 +1,7 @@
 <script setup>
 import {ref} from 'vue'
+import {useRouter} from "vue-router"
+const router =useRouter();
 
 const showPassword = ref(false)
 const showConfirmPassword = ref(false)
