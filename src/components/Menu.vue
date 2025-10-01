@@ -12,7 +12,7 @@ function view(menu){
 </script>
 
 <template>
-    <h1>Menu</h1>
+    
     <v-container>
         <v-row>
             <v-col md="3" v-for="item in menu" :key = "item">

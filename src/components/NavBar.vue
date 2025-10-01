@@ -1,5 +1,6 @@
 <script setup>
-const isLoggedIn = JSON.parse(localStorage.getItem( "isLoggedIn")) 
+const isLoggedIn = localStorage.getItem( "isLoggedIn") 
+const isAdmin =true
 </script>
 
 <template>
@@ -15,5 +16,6 @@ const isLoggedIn = JSON.parse(localStorage.getItem( "isLoggedIn"))
         <span class="text-h5 text-white" >A</span>
       </v-avatar>
       <v-btn to ="/Login" v-else>Login</v-btn>
+      <v-btn to ="Admin" v-if="isLoggedIn && isAdmin">Admin</v-btn>
     </v-app-bar>
   </template>

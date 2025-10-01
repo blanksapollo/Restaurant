@@ -9,6 +9,7 @@ import Orders from '@/components/Orders.vue'
 import UserProfile from '@/components/UserProfile.vue'
 import Login from '@/components/Login.vue'
 import SignUp from '@/components/SignUp.vue'
+import Admin from '@/components/Admin.vue'
 
 
 const router = createRouter({
@@ -58,6 +59,11 @@ const router = createRouter({
       name: 'signup', 
       path: '/signup',
       component: SignUp,
+    },
+    {
+      name: 'admin',
+      path: '/admin',
+      component: Admin
     },
   ],
 })
